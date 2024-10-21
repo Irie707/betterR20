@@ -252,6 +252,7 @@ function baseBACharacters () {
 					_char: () => this,
 					_get: function (q) {
 						switch (q) {
+							case "description": return this._ref.description?.attributes.current;
 							case "name": return this._ref.atkname?.attributes.current;
 							case "range": return this._ref.atkrange?.attributes.current;
 							case "dmg1type": return this._ref.dmgtype?.attributes.current;
